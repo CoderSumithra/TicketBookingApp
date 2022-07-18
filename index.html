@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>TICKET BOOKING</title>
+        <script src="main.js"></script>
+    </head>
+    <body>
+         <form name='registration' onSubmit="javascript:formValidation();">
+         <div class="valid-feedback" id="valid-feedback"></div>
+         <div class="invalid-feedback"id="invalid-feedback"></div>
+         
+         <nav>
+                <h1>Booking Details</h1>
+
+         </nav>
+         <div>
+            <input type="radio" name ="triptype"/> One way <br> 
+            <input type="radio" name ="triptype"/> Round Trip
+         </div> 
+         <br>
+         <div>
+            From : <input type="text" name ="departure"/> 
+            To : <input type="text" name ="arrival"/> 
+         </div>
+         <br>
+         <div>
+            Departure Date : <input type="date" name ="departureDate"/> 
+            Return Date: <input type="date" name ="returnDate"/> 
+         </div>
+         <br>
+         <nav>
+            <h3>Number of Passengers</h3>
+        </nav>
+        <div>
+           Adults : <input type="text" name ="adults"/> 
+           Children : <input type="text" name ="children"/> 
+        </div>
+
+        <nav>
+            <h3>Passengers Details</h3>
+
+       </nav>
+       
+       <nav>
+           <h5>Passenger 1 Details</h5>
+      </nav><br>
+
+       <div>
+            <div>Name : <input type="text" name ="name1"/> </div> <br>
+            <div></div>Gender : <input type="radio" name ="gender1"/> Male <input type="radio" name ="gender1"/> Female</div><br>
+            <div> Age : <input type="text" name ="age1"/> </div> <br>
+       </div>
+
+       <nav>
+        <h5>Passenger 2 Details</h5>
+   </nav><br>
+
+    <div>
+         <div>Name : <input type="text" name ="name1"/> </div> <br>
+         <div></div>Gender : <input type="radio" name ="gender1"/> Male <input type="radio" name ="gender1"/> Female</div> <br>
+         <div> Age : <input type="text" name ="age1"/> </div> 
+    </div><br>
+
+    
+
+    <nav>
+        <h5>Class</h5>
+    </nav>
+
+     <div class="control radio">
+        <i class="zmdi zmdi-airline-seat-recline-extra"></i>
+        <div class="control-item">
+            <h6 style="margin-bottom: 8px"></h6>
+            <label>
+                <input type="radio" name="seat" value="Economy" checked="checked">
+                <span>Economy</span>
+            </label>
+            <label>
+                <input type="radio" name="seat" value="Business">
+                <span>Business</span>
+            </label>
+            <label>
+                <input type="radio" name="seat" value="First Class">
+                <span>First Class</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="control">
+        <button class="btnSearch">Search Flights</button>
+    </div>
+
+
+<div class="list">
+    <div class="nano">
+        <div class="nano-content">
+                        
+        </div>
+    </div>					
+</div>
+
+<div class="ticket">
+    <section>
+        <button class="btnBook">BOOK FLIGHT</button>
+    </section>
+    
+</div>
+
+
+		
+
+
+       <footer> 
+            <p><h3>Payment Details </h3></p>
+            <div>
+                <div>Full Name : <input type="text" name ="fullname"/> </div> <br>
+                <div>Email     : <input type="text" name ="email"/> </div> <br>
+                <div> Mobile   : <input type="text" name ="mobile"/> </div> <br>
+                <div> Address  : <input type="text" name ="address"/> </div><br> 
+                <div> <input type="submit" name="submit" value="Submit" /> </div> 
+            </div>
+
+            
+
+       </footer>
+    </form>
+    </body>
+</html>

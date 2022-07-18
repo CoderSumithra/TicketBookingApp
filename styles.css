@@ -1,0 +1,18 @@
+
+  
+  html, body { min-height: 100% }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: hsl(233, 36%, 95%);
+    background-image: url("airplane.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+  }
+  
+ 
