@@ -11,6 +11,7 @@ function formValidation() {
             if (validateEmail(email)) {
 
                 document.getElementById("valid-feedback").innerHTML = "All fields valid";
+                document.getElementById("invalid-feedback").innerHTML ="";
             }  
 
         }  
@@ -28,6 +29,7 @@ function formValidation() {
         else {
             uname.focus();
             document.getElementById("invalid-feedback").innerHTML = 'Username must have alphabet characters only';
+            document.getElementById("valid-feedback").innerHTML ="";
             return false;
         }
     }
@@ -52,7 +54,8 @@ function formValidation() {
             return true;
         }
         else {
-            document.getElementById("invalid-feedback").innerHTML = "Mobile number invalid";
+            document.getElementById("invalid-feedback").innerHTML = "Mobile number invalid(10 digits) ";
+            document.getElementById("valid-feedback").innerHTML ="";
             return false;
         }
     }
@@ -66,6 +69,7 @@ function formValidation() {
         }
         else { 
             document.getElementById("invalid-feedback").innerHTML = " You have entered an invalid email address!";
+            document.getElementById("valid-feedback").innerHTML ="";
             uemail.focus();
             return false;
         }

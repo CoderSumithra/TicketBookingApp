@@ -6,7 +6,7 @@
         <script src="main.js"></script>
     </head>
     <body>
-         <form name='registration' onSubmit="javascript:formValidation();">
+         <form name='registration'>
          <div class="valid-feedback" id="valid-feedback"></div>
          <div class="invalid-feedback"id="invalid-feedback"></div>
          
@@ -108,17 +108,14 @@
 </div>
 
 
-		
-
-
-       <footer> 
+		 <footer> 
             <p><h3>Payment Details </h3></p>
             <div>
                 <div>Full Name : <input type="text" name ="fullname"/> </div> <br>
                 <div>Email     : <input type="text" name ="email"/> </div> <br>
                 <div> Mobile   : <input type="text" name ="mobile"/> </div> <br>
                 <div> Address  : <input type="text" name ="address"/> </div><br> 
-                <div> <input type="submit" name="submit" value="Submit" /> </div> 
+                <div> <input type="button" name="submit" value="Submit" onclick="javascript:formValidation();">/> </div> 
             </div>
 
             

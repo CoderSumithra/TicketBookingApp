@@ -14,5 +14,12 @@
     
 
   }
+  .invalid-feedback{
+    background-color: white;
+    color: red;
+  }
   
- 
+  .valid-feedback{
+    background-color: white;
+    color: green;
+  }
